@@ -71,7 +71,7 @@ body {
 }
 
 .subtitle {
-  font-size: 15px;
+  font-size: 16px;
   color: #718096;
   text-align: center;
   margin-bottom: 36px;
@@ -137,7 +137,7 @@ body {
 
 .progress-text {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   color: #718096;
   font-weight: 500;
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .question-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #2d3748;
   margin-bottom: 28px;
@@ -166,7 +166,7 @@ body {
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   font-family: 'Noto Sans JP', sans-serif;
   color: #4a5568;
@@ -196,7 +196,7 @@ body {
   background: linear-gradient(135deg, #f7e9d7 0%, #f0ddc4 100%);
   color: #8b6f47;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -215,7 +215,7 @@ body {
 }
 
 .section-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: #d4a574;
   margin-bottom: 10px;
@@ -224,7 +224,7 @@ body {
 }
 
 .section-text {
-  font-size: 15px;
+  font-size: 16px;
   color: #4a5568;
   line-height: 1.8;
   padding-left: 12px;
