@@ -5,11 +5,12 @@
 }
 
 body {
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  background-image: url('http://mrs-green.info/page/wp-content/uploads/2026/03/back-1080-x-2920-px-scaled.jpg');
+  background-image: url('http://mrs-green.info/page/wp-content/uploads/2026/03/green_back.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +87,7 @@ body {
   border-radius: 12px;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -167,7 +168,7 @@ body {
   border-radius: 12px;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #4a5568;
   cursor: pointer;
   transition: all 0.3s ease;
