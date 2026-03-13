@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>女性向け資産づくりタイプ診断</title>
+  <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <div class="container">
+    <div id="title-screen" class="screen active">
+      <div class="card">
+        <h1 class="main-title">女性向け<br>資産づくりタイプ診断</h1>
+        <p class="subtitle">あなたに合った資産づくりのスタイルを見つけましょう</p>
+        <button class="btn-primary" id="start-btn">診断をはじめる</button>
+      </div>
+    </div>
+
+    <div id="question-screen" class="screen">
+      <div class="card">
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <p class="progress-text" id="progress-text">質問 1 / 10</p>
+        </div>
+
+        <div class="question-content">
+          <h2 class="question-title" id="question-title"></h2>
+          <div class="options" id="options-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="result-screen" class="screen">
+      <div class="card">
+        <div class="result-content">
+          <div class="result-badge">あなたのタイプは</div>
+          <h2 class="result-title" id="result-title"></h2>
+          <div class="result-section">
+            <h3 class="section-title">説明</h3>
+            <p class="section-text" id="result-description"></p>
+          </div>
+          <div class="result-section">
+            <h3 class="section-title">今の課題</h3>
+            <p class="section-text" id="result-challenge"></p>
+          </div>
+          <div class="result-section">
+            <h3 class="section-title">最初の一歩</h3>
+            <p class="section-text" id="result-firststep"></p>
+          </div>
+
+          <div class="placeholder-section">
+            <p class="placeholder-text">📱 LINE登録で無料プレゼント</p>
+            <p class="placeholder-subtext">※ここにLINE登録ボタンやプレゼント案内を設置できます</p>
+          </div>
+
+          <button class="btn-secondary" id="retry-btn">もう一度診断する</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

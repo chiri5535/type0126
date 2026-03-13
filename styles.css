@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Shippori Mincho', serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url('http://mrs-green.info/page/wp-content/uploads/2026/03/back-1080-x-2920-px-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.screen.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 40px 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #718096;
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Shippori Mincho', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #d4a574 0%, #c89865 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 152, 101, 0.3);
+}
+
+.btn-secondary {
+  background: white;
+  color: #d4a574;
+  border: 2px solid #d4a574;
+  margin-top: 24px;
+}
+
+.btn-secondary:hover {
+  background: #faf9f7;
+  transform: translateY(-2px);
+}
+
+.progress-container {
+  margin-bottom: 32px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d4a574 0%, #c89865 100%);
+  transition: width 0.4s ease;
+  border-radius: 10px;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 13px;
+  color: #718096;
+  font-weight: 500;
+}
+
+.question-content {
+  min-height: 300px;
+}
+
+.question-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  width: 100%;
+  padding: 18px 20px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Shippori Mincho', serif;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.option-btn:hover {
+  border-color: #d4a574;
+  background: #faf9f7;
+  transform: translateX(4px);
+}
+
+.option-btn:active {
+  transform: scale(0.98);
+}
+
+.result-content {
+  text-align: center;
+}
+
+.result-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #f7e9d7 0%, #f0ddc4 100%);
+  color: #8b6f47;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.result-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.result-section {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #d4a574;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 3px solid #d4a574;
+}
+
+.section-text {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.8;
+  padding-left: 12px;
+}
+
+.placeholder-section {
+  margin-top: 36px;
+  padding: 24px 20px;
+  background: linear-gradient(135deg, #f7f9fc 0%, #f0f4f8 100%);
+  border-radius: 16px;
+  border: 2px dashed #cbd5e0;
+}
+
+.placeholder-text {
+  font-size: 15px;
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.placeholder-subtext {
+  font-size: 12px;
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .question-title {
+    font-size: 16px;
+  }
+
+  .option-btn {
+    padding: 16px 18px;
+    font-size: 13px;
+  }
+
+  .result-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .card {
+    padding: 48px 40px;
+  }
+}
