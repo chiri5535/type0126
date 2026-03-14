@@ -231,25 +231,51 @@ body {
   padding-left: 12px;
 }
 
-.placeholder-section {
+.cta-section {
   margin-top: 36px;
-  padding: 24px 20px;
-  background: linear-gradient(135deg, #f7f9fc 0%, #f0f4f8 100%);
+  padding: 28px 24px;
+  background: linear-gradient(135deg, #f7e9d7 0%, #f0ddc4 100%);
   border-radius: 16px;
-  border: 2px dashed #cbd5e0;
+  border: 1px solid rgba(212, 165, 116, 0.2);
 }
 
-.placeholder-text {
-  font-size: 15px;
+.cta-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cta-description {
+  font-size: 14px;
   color: #4a5568;
-  font-weight: 500;
-  margin-bottom: 6px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.placeholder-subtext {
-  font-size: 15px;
-  color: #a0aec0;
-  line-height: 1.6;
+.btn-cta {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #d4a574 0%, #c89865 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 152, 101, 0.3);
 }
 
 @media (max-width: 480px) {
